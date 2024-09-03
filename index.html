@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <nav id="navigation_bar">
+            <div id="nav_content">
+                <img src="https://img.icons8.com/?size=100&id=Rdp3AydLFY2A&format=png&color=000000" alt="Menu"class="icon" onclick="toggleMenu()">
+
+                <div class="menu_box">
+                    <div class="menu">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="logo">
+                    <h1>abadant</h1>
+                </div>
+                <div> <input type="search" name="search" id="search" placeholder="search for an item"></div>
+                <div><input type="range" name="range" id="range"></div>
+            </div>
+        </nav>
+    </div>
+    <div id="entire_box_place">
+        <div id="box">
+            <div class="item_box">
+                <div class="image">image</div>
+                <div class="name">name</div>
+                <div class="price">price</div>
+                <div class="button"><a href="#" target="_blank"><button class="btn">button</button></a></div>
+            </div>
+        </div>
+        <div id="box">
+            <div class="item_box">
+                <div class="image">image</div>
+                <div class="name">name</div>
+                <div class="price">price</div>
+                <div class="button"><a href="#" target="_blank"><button class="btn">button</button></a></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
